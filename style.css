@@ -27,12 +27,11 @@ body {
 
 
 header {
-    background-image: url('img/latar.webp');
+   
     background-size: cover; /* Membuat gambar menutupi seluruh header */
     background-position: center; /* Posisikan gambar di tengah */
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
-    
     justify-content: space-between;
     align-items: center;
     padding: 40px 20px;
@@ -56,15 +55,16 @@ header .menu-toggle {
     display: flex;
     margin: 0;
     padding: 0;
+    
 }
 
 .navbar ul li {
-    margin: 0 15px;
+    margin: 0 25px;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     transition: color 0.3s;
 }
@@ -82,8 +82,9 @@ header .menu-toggle {
 .menu-toggle .bar {
     height: 3px;
     width: 25px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin: 4px 0;
+   
 }
 
 @media screen and (max-width: 768px) {
@@ -92,9 +93,12 @@ header .menu-toggle {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 90px;
+        top: 150px;
         left: 0;
-        background: rgba(0, 0, 0, 0.9);
+        right: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+        background: rgba(255, 255, 255, 0.9);
     }
 
     .navbar ul li {
@@ -272,10 +276,7 @@ footer {
         height: auto;
     }
 
-    .swiper-button-next, .swiper-button-prev {
-        width: 40px;
-        height: 40px;
-    }
+   
 }
 
 @media (max-width: 480px) {
@@ -302,15 +303,12 @@ footer {
         height: auto;
     }
 
-    .swiper-button-next, .swiper-button-prev {
-        width: 30px;
-        height: 30px;
-    }
+    
 
-    .content {
+    .dokumentasi {
         padding: 15px; /* Further reduce padding for smaller devices */
         max-width: 100%; /* Make content take full width */
-        margin: 10px auto; /* Reduce margins further */
+        
     }
 }
 
@@ -371,58 +369,7 @@ p {
     font-size: 16px;
     color: #666;
 }
-.swiper-container {
-    width: 35%;
-    padding: 20px 0;
-    margin: 0 auto;
-}
 
-.swiper-wrapper {
-    display: flex;
-    align-items: center; /* Menyelaraskan slide secara vertikal */
-}
-
-.swiper-slide {
-    width: 60px; /* Menambah ukuran slide */
-    height: 60px; /* Menambah ukuran slide */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    overflow: hidden;
-    border-radius: 50%; /* Membuat kontainer bulat */
-    margin: 0 10px; /* Memberi jarak antar slide */
-}
-
-.swiper-slide img {
-    width: 100%; /* Memastikan gambar sesuai dengan kontainer */
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%; /* Membuat gambar bulat penuh */
-}
-
-.swiper-button-next, .swiper-button-prev {
-    color: #1a1100;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.8); /* Memberi latar belakang semi-transparan pada tombol */
-    border-radius: 50%; /* Membuat tombol bulat */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Memberi efek bayangan pada tombol */
-    transition: transform 0.3s ease;
-}
-
-.swiper-button-next:hover, .swiper-button-prev:hover {
-    transform: scale(1.1); /* Efek hover */
-}
-
-.swiper-button-next::after, .swiper-button-prev::after {
-    font-size: 16px; /* Mengatur ukuran ikon navigasi */
-}
  
 
 /* Loading Spinner */
@@ -461,6 +408,73 @@ h4{
     height: auto;
 }
 
-p{
-    text-align: center;
+.awal {
+    display: flex;
+    justify-content: space-between; /* Keep the image on the right and content on the left */
+    align-items: center; 
+    margin-left: 15px;
+    max-width: 100%; 
+  }
+  
+  .content {
+    max-width: 30%; /* Limit width of the content */
+    margin: right 20%;;
+  }
+  
+  .awal img {
+    height: 200px; 
+    margin-right: 15px;
+  }
+  
+  h6{
+    color: black;
+    font-size: 3ch;
+    font-family: 'Oswald'
+  }
+  p{
+    font-family: 'Inconsolata', monospace; 
+    color: #1a0900;
+  }
+
+  .data{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-size: 3ch;
+    margin-bottom: 15px;
+  }
+ .data h3{
+    font-family: 'Inconsolata', monospace; 
+    color: #1a0900;
+ }
+  .data p{
+    color: #e74e1f;
+  }
+button{
+  border: 2px solid #000000;
+  background-color: #e74e1f;
+  color: #ffffff;
+  border-radius: 12px;
+  margin-top: 5px;
+  padding: 5px;
+  text-align: center;
+  }
+
+
+  .kedua {
+    display: flex;
+    align-items: center; /* untuk vertikal align */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.image-left {
+    flex: 1; /* Menyesuaikan lebar gambar */
+}
+
+.content-right {
+    flex: 1; /* Menyesuaikan lebar konten */
+    padding-left: 20px; /* Jarak antara gambar dan konten */
 }
