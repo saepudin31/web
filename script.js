@@ -39,3 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 });
+
+
+
+// Fungsi untuk pindah halaman
+function pindahHalaman(namaProduk) {
+    // Redirect ke halaman lain dengan nama produk di URL
+    window.location.href = namaProduk + ".html";
+}
