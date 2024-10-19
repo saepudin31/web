@@ -70,7 +70,7 @@ header .menu-toggle {
 }
 
 .navbar ul li a:hover {
-    color: #FFEB3B; /* Warna saat hover */
+    color: #e74e1f ; /* Warna saat hover */
 }
 
 .menu-toggle {
@@ -495,11 +495,16 @@ h4{
     padding-left: 20px; /* Jarak antara gambar dan konten */
 }
 
-
-
-table,td{
-    border: 2px solid ;
+table{
     
+    border: 1px solid rgb(0, 0, 0);
+}
+
+td{
+    
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+   padding: 5px;
 }
 th{
     background-color: #000000;
@@ -510,6 +515,11 @@ table{
     margin-bottom: 15px;
     text-align: center;
     justify-content: center;
-  
     
+}
+
+caption{
+    border: 2px solid ;
+    background-color: #000000;
+    color: white;
 }
