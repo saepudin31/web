@@ -451,15 +451,31 @@ h4{
   .data p{
     color: #e74e1f;
   }
-button{
-  border: 2px solid #000000;
-  background-color: #e74e1f;
-  color: #ffffff;
-  border-radius: 12px;
-  margin-top: 5px;
-  padding: 5px;
-  text-align: center;
-  }
+  button {
+    border: 2px solid #000000;
+    background-color: #e74e1f;
+    color: #ffffff;
+    border-radius: 12px;
+    margin-top: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    animation: borderAnim 2s infinite; /* Menambahkan animasi border */
+}
+
+/* Animasi perubahan warna border */
+@keyframes borderAnim {
+    0% {
+        border-color: #000000; /* Warna awal */
+    }
+    50% {
+        border-color: #ffffff; /* Warna tengah */
+    }
+    100% {
+        border-color: #000000; /* Kembali ke warna awal */
+    }
+}
 
 
   .kedua {
@@ -477,4 +493,23 @@ button{
 .content-right {
     flex: 1; /* Menyesuaikan lebar konten */
     padding-left: 20px; /* Jarak antara gambar dan konten */
+}
+
+
+
+table,td{
+    border: 2px solid ;
+    
+}
+th{
+    background-color: #000000;
+    color: white;
+}
+table{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+    justify-content: center;
+  
+    
 }
