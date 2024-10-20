@@ -50,6 +50,7 @@ header .menu-toggle {
     font-weight: bold;
 }
 
+
 .navbar ul {
     list-style-type: none;
     display: flex;
@@ -112,7 +113,8 @@ header .menu-toggle {
     .navbar.active ul {
         display: flex;
     }
-}
+}  
+
 
 .minuman, .Pln, .Ppob, .makanan {
     

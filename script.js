@@ -47,3 +47,5 @@ function pindahHalaman(namaProduk) {
     // Redirect ke halaman lain dengan nama produk di URL
     window.location.href = namaProduk + ".html";
 }
+
+
