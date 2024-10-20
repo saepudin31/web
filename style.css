@@ -49,8 +49,6 @@ header .menu-toggle {
     font-size: 24px;
     font-weight: bold;
 }
-
-
 .navbar ul {
     list-style-type: none;
     display: flex;
@@ -114,7 +112,6 @@ header .menu-toggle {
         display: flex;
     }
 }  
-
 
 .minuman, .Pln, .Ppob, .makanan {
     
@@ -540,4 +537,11 @@ caption{
 .deposit-img img {
     max-width: 100%; /* Makes the image responsive */
     height: auto;    /* Maintains aspect ratio */
+}
+
+
+.deposit-img video {
+    width: 100%; /* Mengatur lebar video sesuai kontainer */
+    max-width: 100%; /* Maksimal lebar video */
+    height: auto; /* Menjaga rasio aspek */
 }
