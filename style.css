@@ -525,3 +525,19 @@ caption{
     background-color: #000000;
     color: white;
 }
+
+.deposit {
+    color: #000000;
+    width: 100%;
+}
+
+.deposit-img {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+}
+
+.deposit-img img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;    /* Maintains aspect ratio */
+}
