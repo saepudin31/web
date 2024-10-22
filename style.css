@@ -28,7 +28,8 @@ body {
 
 header {
    
-    background-size: cover; /* Membuat gambar menutupi seluruh header */
+    background-size: cover;
+    background-color: #ffffff; /* Membuat gambar menutupi seluruh header */
     background-position: center; /* Posisikan gambar di tengah */
     color: rgb(0, 0, 0);
     display: flex;
@@ -97,7 +98,7 @@ header .menu-toggle {
         right: 0;
         margin-left: 5px;
         margin-right: 5px;
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(226, 226, 226, 0.9);
     }
 
     .navbar ul li {
