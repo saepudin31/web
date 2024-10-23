@@ -16,12 +16,46 @@ html, body {
 }
 
 body {
+
     display: flex;
+
     flex-direction: column;
+
     min-height: 100vh; 
-    overflow-x: hidden; /* Menghilangkan scroll horizontal */
-    
-    
+
+    overflow-x: hidden; 
+
+    overflow-y: scroll; /* tambahkan scrollbar secara vertikal */
+
+    scroll-behavior: smooth; /* membuat scrollbar bergerak dengan smooth */
+
+}
+
+
+/* tambahkan efek scrollbar yang menarik */
+
+body::-webkit-scrollbar {
+
+    width: 10px; /* lebar scrollbar */
+
+    background-color: #f5f5f5; /* warna latar scrollbar */
+
+}
+
+
+body::-webkit-scrollbar-thumb {
+
+    background-color: #ccc; /* warna scrollbar */
+
+    border-radius: 10px; /* bentuk scrollbar */
+
+}
+
+
+body::-webkit-scrollbar-thumb:hover {
+
+    background-color: #aaa; /* warna scrollbar saat dihover */
+
 }
 
 
@@ -29,8 +63,8 @@ body {
 header {
    
     background-size: cover;
-    background-color: #ffffff; /* Membuat gambar menutupi seluruh header */
-    background-position: center; /* Posisikan gambar di tengah */
+    background-color: #ffffff; 
+    background-position: center; 
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
@@ -70,7 +104,7 @@ header .menu-toggle {
 }
 
 .navbar ul li a:hover {
-    color: #e74e1f ; /* Warna saat hover */
+    color: #8ce1e4 ; /* Warna saat hover */
 }
 
 .menu-toggle {
@@ -331,9 +365,16 @@ h1 {
     margin-bottom: 20px;
 }
 
+
 h1 .highlight {
-    color: #ff884d;
+    background: linear-gradient(90deg, #23e5da, #004aad);
+    -webkit-background-clip: text; /* Untuk WebKit (Chrome, Safari) */
+    background-clip: text; /* Definisi standar */
+    -webkit-text-fill-color: transparent; /* Untuk mengisi warna teks pada browser WebKit */
+    color: transparent; /* Untuk browser lain yang tidak mendukung */
 }
+
+
 
 .features {
     display: flex;
@@ -361,7 +402,7 @@ h1 .highlight {
 
 h2 {
     font-size: 24px;
-    color: #ff884d;
+    color: #23e5da;
     margin-bottom: 10px;
 }
 
@@ -433,7 +474,7 @@ h4{
   }
   p{
     font-family: 'Inconsolata', monospace; 
-    color: #1a0900;
+    color:black ;
   }
 
   .data{
@@ -446,14 +487,14 @@ h4{
   }
  .data h3{
     font-family: 'Inconsolata', monospace; 
-    color: #1a0900;
+    color: #23e5da;
  }
   .data p{
-    color: #e74e1f;
+    color: #23e5da;
   }
   button {
+    background: linear-gradient(90deg, #23e5da, #004aad);
     border: 2px solid #000000;
-    background-color: #e74e1f;
     color: #ffffff;
     border-radius: 12px;
     margin-top: 5px;
@@ -462,7 +503,19 @@ h4{
     font-size: 16px;
     cursor: pointer;
     animation: borderAnim 2s infinite; /* Menambahkan animasi border */
+    background-clip: padding-box; /* Memastikan gradien berada di dalam batas */
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+button:hover {
+    background-color: #23e5da; /* Ubah background saat hover */
+    -webkit-text-fill-color: initial; /* Membuat teks kembali terlihat */
+    background-clip: padding-box;
+}
+
 
 /* Animasi perubahan warna border */
 @keyframes borderAnim {
